@@ -31,8 +31,7 @@ class TreeNode:
 
 class Solution:
     def findTarget(self, root: Optional[TreeNode], k: int) -> bool:
-        queue = []
-        queue.append(root)
+        queue = [root]
         d = {}
         while queue:
             ele = queue.pop(0)
