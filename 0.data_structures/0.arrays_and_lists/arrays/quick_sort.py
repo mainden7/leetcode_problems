@@ -6,9 +6,10 @@ def quick_sort(arr):
         return arr
     # can also be a first element or a random
     pivot = arr[len(arr) // 2]
+    eq = [ele for ele in arr if ele == pivot]
     less = [ele for ele in arr if ele < pivot]
     more = [ele for ele in arr if ele > pivot]
-    return quick_sort(less) + [pivot] + quick_sort(more)
+    return quick_sort(less) + eq + quick_sort(more)
 
 
 def quick_sort_iterative(arr):

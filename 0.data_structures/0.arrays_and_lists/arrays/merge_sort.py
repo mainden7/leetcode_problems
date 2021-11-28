@@ -1,7 +1,3 @@
-import random
-import typing as ty
-
-
 def merge_sort(arr):
     # 1. Store the length of the list
     list_length = len(arr)
@@ -46,3 +42,6 @@ def merge(left, right):
 
     return output
 
+
+if __name__ == "__main__":
+    merge_sort([0, 5, 4, 1, 3, 2])
